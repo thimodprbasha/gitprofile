@@ -3,9 +3,10 @@ node_js:
   - "stable"
 cache: npm
 install:
-    - npm install
+  - npm install
 script:
   - npm run build
+  - npm run dev
 deploy:
  provider: pages
  skip_cleanup: true
