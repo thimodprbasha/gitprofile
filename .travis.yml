@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  - 18
+  - "stable"
 cache: npm
 install:
     - npm install
 script:
-  - npm run dev
+  - npm run build
 deploy:
  provider: pages
  skip_cleanup: true
