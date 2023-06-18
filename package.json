@@ -2,8 +2,31 @@
   "name": "@arifszn/gitprofile",
   "description": "Create an automatic portfolio based on GitHub profile",
   "version": "2.5.0",
-  "private": true,
-  "homepage": "https://thimodprbasha.github.io/Portfolio-Git",
+  "license": "MIT",
+  "author": "arifszn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arifszn/gitprofile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arifszn/gitprofile/issues"
+  },
+  "files": [
+    "dist/gitprofile.es.js",
+    "dist/gitprofile.umd.js",
+    "dist/style.css",
+    "types"
+  ],
+  "main": "./dist/gitprofile.umd.js",
+  "module": "./dist/gitprofile.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gitprofile.es.js",
+      "require": "./dist/gitprofile.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "typings": "./types/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,9 +35,7 @@
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --ext .js,.jsx --fix .",
     "prettier": "prettier --check \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
-    "prettier:fix": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\"" ,
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "prettier:fix": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\""
   },
   "dependencies": {
     "@arifszn/gitprofile": "^2.5.0",
