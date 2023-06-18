@@ -171,7 +171,12 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         avatarRing={!sanitizedConfig.themeConfig.hideAvatarRing}
                         resume={sanitizedConfig.resume}
+                        description={sanitizedConfig.about.description}
                       />
+                      {/* <About
+                        loading={loading}
+                        description={sanitizedConfig.about.description}
+                      /> */}
                       <Details
                         profile={profile}
                         loading={loading}
@@ -199,21 +204,17 @@ const GitProfile = ({ config }) => {
                   </div>
                   <div className="lg:col-span-2 col-span-1">
                     <div className="grid grid-cols-1 gap-6">
-                      <About
-                        loading={loading}
-                        description={sanitizedConfig.about.description}
-                      />
                       <Project
                         repo={repo}
                         loading={loading}
                         github={sanitizedConfig.github}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
-                      {/* <ExternalProject
+                      <ExternalProject
                         loading={loading}
                         externalProjects={sanitizedConfig.externalProjects}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
-                      /> */}
+                      />
                       {/* <Blog
                         loading={loading}
                         googleAnalytics={sanitizedConfig.googleAnalytics}

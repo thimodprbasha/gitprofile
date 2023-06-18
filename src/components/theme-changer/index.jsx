@@ -1,6 +1,7 @@
 import { AiOutlineControl } from 'react-icons/ai';
 import { skeleton } from '../../helpers/utils';
 import PropTypes from 'prop-types';
+import { Switch } from '@headlessui/react';
 
 const ThemeChanger = ({ theme, setTheme, loading, themeConfig }) => {
   const changeTheme = (e, selectedTheme) => {

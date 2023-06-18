@@ -127,15 +127,15 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'pastel',
+    defaultTheme: 'light',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+    respectPrefersColorScheme: true,
 
     // Hide the ring in Profile picture
     hideAvatarRing: false,
