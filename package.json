@@ -1,15 +1,15 @@
 {
-  "name": "@arifszn/gitprofile",
+  "name": "@thimodprbasha/gitprofile",
   "description": "Create an automatic portfolio based on GitHub profile",
   "version": "2.5.0",
   "license": "MIT",
-  "author": "arifszn",
+  "author": "thimodprbasha",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thimodprbasha/Portfolio.git"
+    "url": "https://github.com/thimodprbasha/gitprofile.git"
   },
   "bugs": {
-    "url": "https://github.com/thimodprbasha/Portfolio/issues"
+    "url": "https://github.com/thimodprbasha/gitprofile/issues"
   },
   "files": [
     "dist/gitprofile.es.js",
