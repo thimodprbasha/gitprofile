@@ -6,10 +6,10 @@
   "author": "arifszn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/gitprofile.git"
+    "url": "https://github.com/thimodprbasha/Portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/gitprofile/issues"
+    "url": "https://github.com/thimodprbasha/Portfolio/issues"
   },
   "files": [
     "dist/gitprofile.es.js",
