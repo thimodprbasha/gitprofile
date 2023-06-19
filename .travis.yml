@@ -14,5 +14,3 @@ deploy:
  keep_history: true
  on:
    branch: master
-
-   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
