@@ -42,6 +42,21 @@ const GitProfile = ({ config }) => {
   const [profile, setProfile] = useState(null);
   const [repo, setRepo] = useState(null);
 
+  const useThemeDetector = () => {
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+    const [dark, setDark] = useState(prefersDark);
+
+    useEffect(() => {
+      if (dark) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+    }, [dark]);
+  };
+
   useEffect(() => {
     if (sanitizedConfig) {
       setTheme(getInitialTheme(sanitizedConfig.themeConfig));
@@ -158,14 +173,14 @@ const GitProfile = ({ config }) => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                   <div className="col-span-1">
                     <div className="grid grid-cols-1 gap-6">
-                      {!sanitizedConfig.themeConfig.disableSwitch && (
+                      {!sanitizedConfig.themeConfig.disableSwitch ? (
                         <ThemeChanger
                           theme={theme}
                           setTheme={setTheme}
                           loading={loading}
                           themeConfig={sanitizedConfig.themeConfig}
                         />
-                      )}
+                      ) : useThemeDetector()}
                       <AvatarCard
                         profile={profile}
                         loading={loading}
